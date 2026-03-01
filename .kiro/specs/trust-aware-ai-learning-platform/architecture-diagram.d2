@@ -1,0 +1,519 @@
+direction: down
+
+title: {
+  label: "Trust-Aware AI Learning Platform - Modular Architecture"
+  near: top-center
+  shape: text
+  style.font-size: 24
+  style.bold: true
+}
+
+# ============================================================================
+# FRONTEND LAYER
+# ============================================================================
+frontend_layer: {
+  label: "Frontend Layer"
+  style.fill: "#E3F2FD"
+  style.stroke: "#1976D2"
+  style.stroke-width: 3
+  
+  web_ui: {
+    label: "Web UI (React/TypeScript)\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    style.stroke: "#2E7D32"
+    
+    query_interface: "Query Interface"
+    confidence_display: "Confidence Display"
+    challenge_ui: "Challenge UI"
+    simplify_toggle: "Simplify Mode Toggle"
+  }
+  
+  mobile_app: {
+    label: "Mobile App\n[FUTURE - Phase 5]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke: "#1565C0"
+    style.stroke-dash: 5
+    
+    voice_ui: "Voice Interface"
+    offline_mode: "Offline Mode"
+  }
+  
+  accessibility: {
+    label: "Accessibility Components\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    keyboard_nav: "Keyboard Navigation"
+    screen_reader: "Screen Reader Support"
+    high_contrast: "High Contrast Mode"
+  }
+}
+
+# ============================================================================
+# API LAYER
+# ============================================================================
+api_layer: {
+  label: "API Layer (FastAPI)"
+  style.fill: "#FFF3E0"
+  style.stroke: "#F57C00"
+  style.stroke-width: 3
+  
+  request_router: {
+    label: "Request Router\n[PROTOTYPE]"
+    shape: hexagon
+    style.fill: "#4CAF50"
+    
+    endpoints: "REST Endpoints\n/api/query\n/api/challenge\n/api/response"
+  }
+  
+  auth_module: {
+    label: "Authentication Module\n[FUTURE - Phase 2]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    jwt_handler: "JWT Handler"
+    session_mgmt: "Session Management"
+    rbac: "Role-Based Access Control"
+  }
+  
+  rate_limiter: {
+    label: "Rate Limiter\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    ip_throttle: "IP-based Throttling"
+    queue_mgmt: "Request Queue"
+  }
+  
+  validator: {
+    label: "Request Validator\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    pydantic_models: "Pydantic Models"
+    error_handler: "Error Handler"
+  }
+}
+
+# ============================================================================
+# AI PROCESSING LAYER
+# ============================================================================
+ai_processing_layer: {
+  label: "AI Processing Layer"
+  style.fill: "#F3E5F5"
+  style.stroke: "#7B1FA2"
+  style.stroke-width: 3
+  
+  prompt_orchestrator: {
+    label: "Prompt Orchestrator\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    prompt_templates: "Prompt Templates"
+    context_builder: "Context Builder"
+    response_parser: "Response Parser"
+  }
+  
+  trust_engine: {
+    label: "Trust & Confidence Engine\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    style.stroke: "#2E7D32"
+    style.stroke-width: 2
+    
+    confidence_scorer: "Confidence Scorer"
+    warning_logic: "Warning Logic (< 70%)"
+    citation_extractor: "Citation Extractor"
+    calibration_tracker: "Calibration Tracker"
+  }
+  
+  challenge_engine: {
+    label: "Challenge Engine\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    style.stroke: "#2E7D32"
+    style.stroke-width: 2
+    
+    challenge_generator: "Challenge Generator"
+    evaluator: "Answer Evaluator"
+    hint_system: "Adaptive Hints"
+    feedback_generator: "Feedback Generator"
+  }
+  
+  simplification_engine: {
+    label: "Simplification Engine\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    style.stroke: "#2E7D32"
+    style.stroke-width: 2
+    
+    text_simplifier: "Text Simplifier"
+    complexity_scorer: "Complexity Scorer"
+    accuracy_validator: "Accuracy Validator"
+  }
+  
+  governance_module: {
+    label: "Governance Module\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    content_scanner: "Content Safety Scanner"
+    bias_detector: "Bias Detector"
+    filter_engine: "Content Filter"
+    incident_logger: "Incident Logger"
+  }
+  
+  multilingual: {
+    label: "Multilingual Processor\n[FUTURE - Phase 5]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    translator: "Translation Engine"
+    lang_detector: "Language Detector"
+  }
+}
+
+# ============================================================================
+# LEARNING INTELLIGENCE LAYER
+# ============================================================================
+learning_layer: {
+  label: "Learning Intelligence Layer"
+  style.fill: "#E8F5E9"
+  style.stroke: "#388E3C"
+  style.stroke-width: 3
+  
+  ai_literacy_module: {
+    label: "AI Literacy Tracking Module\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    style.stroke: "#2E7D32"
+    style.stroke-width: 2
+    
+    interaction_tracker: "Interaction Tracker"
+    literacy_scorer: "Literacy Score Computer"
+    reflection_generator: "Reflection Prompt Generator"
+  }
+  
+  mastery_tracker: {
+    label: "Mastery Tracker\n[FUTURE - Phase 4]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    pattern_analyzer: "Learning Pattern Analyzer"
+    gap_identifier: "Knowledge Gap Identifier"
+  }
+  
+  recommendation_engine: {
+    label: "Recommendation Engine\n[FUTURE - Phase 4]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    content_recommender: "Content Recommender"
+    difficulty_adapter: "Difficulty Adapter"
+  }
+}
+
+# ============================================================================
+# ANALYTICS LAYER
+# ============================================================================
+analytics_layer: {
+  label: "Analytics & Reporting Layer"
+  style.fill: "#FFF9C4"
+  style.stroke: "#F9A825"
+  style.stroke-width: 3
+  
+  analytics_engine: {
+    label: "Analytics Engine\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    event_collector: "Event Collector"
+    metrics_aggregator: "Metrics Aggregator"
+    anonymizer: "PII Anonymizer"
+  }
+  
+  engagement_tracker: {
+    label: "Engagement Tracker\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    challenge_metrics: "Challenge Completion"
+    interaction_metrics: "Interaction Metrics"
+  }
+  
+  calibration_metrics: {
+    label: "Calibration Metrics\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    trust_accuracy: "Trust Calibration Accuracy"
+    verification_rate: "Verification Frequency"
+  }
+  
+  educator_dashboard: {
+    label: "Educator Dashboard\n[FUTURE - Phase 3]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    cohort_analytics: "Cohort Analytics"
+    literacy_trends: "AI Literacy Trends"
+    report_generator: "Report Generator"
+  }
+  
+  admin_dashboard: {
+    label: "Admin Dashboard\n[FUTURE - Phase 3]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    system_health: "System Health Monitor"
+    audit_viewer: "Audit Log Viewer"
+    provider_metrics: "LLM Provider Metrics"
+  }
+}
+
+# ============================================================================
+# DATA LAYER
+# ============================================================================
+data_layer: {
+  label: "Data Layer"
+  style.fill: "#FFEBEE"
+  style.stroke: "#C62828"
+  style.stroke-width: 3
+  
+  in_memory_store: {
+    label: "In-Memory Store\n[PROTOTYPE - Phase 1]"
+    shape: cylinder
+    style.fill: "#4CAF50"
+    
+    interactions: "Interactions"
+    challenges: "Challenges"
+    responses: "Responses"
+  }
+  
+  user_database: {
+    label: "User Database\n[FUTURE - Phase 2]"
+    shape: cylinder
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    user_profiles: "User Profiles"
+    credentials: "Encrypted Credentials"
+    preferences: "User Preferences"
+  }
+  
+  session_store: {
+    label: "Session Store\n[FUTURE - Phase 2]"
+    shape: cylinder
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    active_sessions: "Active Sessions"
+    learning_context: "Learning Context"
+  }
+  
+  logs_audit: {
+    label: "Logs & Audit Storage\n[PROTOTYPE]"
+    shape: cylinder
+    style.fill: "#4CAF50"
+    
+    audit_logs: "Audit Logs (AES-256)"
+    incident_logs: "Incident Logs"
+    analytics_events: "Analytics Events"
+  }
+  
+  encryption: {
+    label: "Encryption Layer\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    aes256: "AES-256 Encryption"
+    tls13: "TLS 1.3 Transit"
+  }
+}
+
+# ============================================================================
+# EXTERNAL LAYER
+# ============================================================================
+external_layer: {
+  label: "External Integration Layer"
+  style.fill: "#FCE4EC"
+  style.stroke: "#AD1457"
+  style.stroke-width: 3
+  
+  llm_integration: {
+    label: "LLM Integration\n[PROTOTYPE]"
+    shape: rectangle
+    style.fill: "#4CAF50"
+    
+    GROQ_connector: "GROQ Connector"
+    fallback_handler: "Fallback Handler"
+    cost_tracker: "Cost Tracker"
+  }
+  
+  llm_api: {
+    label: "External LLM API\n(GROQ, etc.)"
+    shape: cloud
+    style.fill: "#FF9800"
+    
+    gpt_models: "GPT Models"
+    token_metadata: "Token Metadata"
+  }
+  
+  multi_provider: {
+    label: "Multi-Provider Support\n[FUTURE - Phase 3]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    provider_abstraction: "Provider Abstraction"
+    load_balancer: "Load Balancer"
+  }
+  
+  edge_deployment: {
+    label: "Edge Deployment Module\n[FUTURE - Phase 6]"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    amd_ryzen_ai: "AMD Ryzen AI"
+    model_quantization: "Model Quantization (8-bit)"
+    offline_sync: "Offline Sync"
+    hybrid_mode: "Hybrid Cloud-Edge"
+  }
+  
+  voice_services: {
+    label: "Voice Services\n[FUTURE - Phase 5]"
+    shape: cloud
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+    
+    speech_to_text: "Speech-to-Text"
+    text_to_speech: "Text-to-Speech"
+  }
+}
+
+# ============================================================================
+# CONNECTIONS - Frontend to API
+# ============================================================================
+frontend_layer.web_ui -> api_layer.request_router: "HTTPS/REST"
+frontend_layer.mobile_app -> api_layer.request_router: "HTTPS/REST" {style.stroke-dash: 5}
+frontend_layer.accessibility -> frontend_layer.web_ui: "enhances"
+
+# ============================================================================
+# CONNECTIONS - API Layer Internal
+# ============================================================================
+api_layer.request_router -> api_layer.rate_limiter: "throttle"
+api_layer.request_router -> api_layer.validator: "validate"
+api_layer.request_router -> api_layer.auth_module: "authenticate" {style.stroke-dash: 5}
+
+# ============================================================================
+# CONNECTIONS - API to AI Processing
+# ============================================================================
+api_layer.request_router -> ai_processing_layer.prompt_orchestrator: "route query"
+api_layer.request_router -> ai_processing_layer.challenge_engine: "route challenge"
+
+# ============================================================================
+# CONNECTIONS - AI Processing Layer Internal
+# ============================================================================
+ai_processing_layer.prompt_orchestrator -> ai_processing_layer.trust_engine: "compute confidence"
+ai_processing_layer.prompt_orchestrator -> ai_processing_layer.governance_module: "scan content"
+ai_processing_layer.prompt_orchestrator -> ai_processing_layer.simplification_engine: "simplify" {style.stroke-dash: 3}
+ai_processing_layer.prompt_orchestrator -> ai_processing_layer.multilingual: "translate" {style.stroke-dash: 5}
+
+ai_processing_layer.challenge_engine -> ai_processing_layer.trust_engine: "uses"
+ai_processing_layer.governance_module -> data_layer.logs_audit: "log incidents"
+
+# ============================================================================
+# CONNECTIONS - AI Processing to Learning Intelligence
+# ============================================================================
+ai_processing_layer.trust_engine -> learning_layer.ai_literacy_module: "track calibration"
+ai_processing_layer.challenge_engine -> learning_layer.ai_literacy_module: "track engagement"
+learning_layer.ai_literacy_module -> learning_layer.mastery_tracker: "feed patterns" {style.stroke-dash: 5}
+learning_layer.mastery_tracker -> learning_layer.recommendation_engine: "inform recommendations" {style.stroke-dash: 5}
+
+# ============================================================================
+# CONNECTIONS - Learning Intelligence to Analytics
+# ============================================================================
+learning_layer.ai_literacy_module -> analytics_layer.analytics_engine: "send events"
+learning_layer.ai_literacy_module -> analytics_layer.calibration_metrics: "update metrics"
+ai_processing_layer.challenge_engine -> analytics_layer.engagement_tracker: "track completion"
+
+# ============================================================================
+# CONNECTIONS - Analytics to Dashboards
+# ============================================================================
+analytics_layer.analytics_engine -> analytics_layer.educator_dashboard: "aggregate data" {style.stroke-dash: 5}
+analytics_layer.analytics_engine -> analytics_layer.admin_dashboard: "system metrics" {style.stroke-dash: 5}
+analytics_layer.calibration_metrics -> analytics_layer.educator_dashboard: "provide insights" {style.stroke-dash: 5}
+
+# ============================================================================
+# CONNECTIONS - Analytics to Data Layer
+# ============================================================================
+analytics_layer.analytics_engine -> data_layer.logs_audit: "store events"
+analytics_layer.engagement_tracker -> data_layer.in_memory_store: "read/write"
+analytics_layer.calibration_metrics -> data_layer.in_memory_store: "read/write"
+
+# ============================================================================
+# CONNECTIONS - Data Layer Internal
+# ============================================================================
+data_layer.encryption -> data_layer.in_memory_store: "encrypt"
+data_layer.encryption -> data_layer.user_database: "encrypt" {style.stroke-dash: 5}
+data_layer.encryption -> data_layer.logs_audit: "encrypt"
+
+api_layer.auth_module -> data_layer.user_database: "authenticate" {style.stroke-dash: 5}
+api_layer.auth_module -> data_layer.session_store: "manage sessions" {style.stroke-dash: 5}
+
+# ============================================================================
+# CONNECTIONS - AI Processing to External Layer
+# ============================================================================
+ai_processing_layer.prompt_orchestrator -> external_layer.llm_integration: "send query"
+external_layer.llm_integration -> external_layer.llm_api: "API call"
+external_layer.llm_api -> external_layer.llm_integration: "response + metadata"
+external_layer.llm_integration -> ai_processing_layer.trust_engine: "return response"
+
+external_layer.multi_provider -> external_layer.llm_api: "route to provider" {style.stroke-dash: 5}
+external_layer.llm_integration -> analytics_layer.admin_dashboard: "cost metrics"
+
+# ============================================================================
+# CONNECTIONS - Edge and Voice (Future)
+# ============================================================================
+external_layer.edge_deployment -> ai_processing_layer.prompt_orchestrator: "local inference" {style.stroke-dash: 5}
+external_layer.edge_deployment -> external_layer.llm_api: "cloud fallback" {style.stroke-dash: 5}
+frontend_layer.mobile_app -> external_layer.voice_services: "voice I/O" {style.stroke-dash: 5}
+external_layer.voice_services -> ai_processing_layer.prompt_orchestrator: "transcribed query" {style.stroke-dash: 5}
+
+# ============================================================================
+# LEGEND
+# ============================================================================
+legend: {
+  label: "Legend"
+  near: bottom-right
+  style.fill: "#FAFAFA"
+  style.stroke: "#424242"
+  
+  prototype: {
+    label: "Solid Green = Phase 1 Prototype"
+    shape: rectangle
+    style.fill: "#4CAF50"
+  }
+  
+  future: {
+    label: "Dashed Blue = Future Phases (2-6)"
+    shape: rectangle
+    style.fill: "#90CAF9"
+    style.stroke-dash: 5
+  }
+  
+  external: {
+    label: "Orange = External Services"
+    shape: rectangle
+    style.fill: "#FF9800"
+  }
+}
